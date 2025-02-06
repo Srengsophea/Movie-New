@@ -1,0 +1,181 @@
+ul li:hover {
+    background-color: #fab20b;
+
+}
+
+ul li a {
+    margin-left: 15px;
+}
+
+body{
+    background: rgb(30, 30, 30);
+}
+.card{
+    background-color: rgb(45, 45, 45);
+}
+#slide1{
+    width: 100%;
+}
+.icon a {
+    margin: 0 7px;
+    text-decoration: none;
+    color:white;
+}
+.icon a:hover{
+    color: #fab20b;
+}
+
+h4{
+    margin-top: 15px;
+    margin-bottom: -40px;
+}
+.card-title{
+    margin-top: -10px;
+}
+.right-menu a{
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px;
+}
+.right-menu a:hover{
+    background-color: #191918;
+}
+#btn{
+    border: 1px solid #191918;
+    color: white;
+}
+#btn:hover{
+    background-color: #191918;
+}
+swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+  }
+
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+  #togglePassword{
+    float: right;
+    margin-left: -25px;
+    margin-top: -30px;
+    right: 10px;
+    position: relative;
+    z-index: 2;
+    
+  }
+  #text-ls:hover{
+    color: #fab20b;
+  }
+  input[type="checkbox"]:checked{
+    color: #fab20b;
+    background-color: #fab20b;
+}
+   input{
+    color: white;
+   }
+  input[type="password"]:focus{
+    color: white;
+  }
+  input[type="text"]:focus{
+    color: white;
+  }
+  #navbar-toggler{
+    display: none;
+  }
+
+  .d-flex .form .input{
+    border: 0;
+    font-size: 16px;
+    color: black;
+    height: 40px;
+    width: 40px;
+    transition: width 0.8s ease;
+    border-radius: 50%;
+    background-color: gray;
+  }
+
+@media screen and (max-width: 1160px) {
+    .right-menu{
+        display: none;
+    }
+    .nav-menu{
+        position: relative;
+    }
+    .nav-menu .menu-toggle{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 15px;
+        cursor: pointer;
+    }
+    .nav-menu .menu-toggle span{
+        display: block;
+        height: 3px;
+        width: 25px;
+        background-color: white;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+    }
+    .nav-menu .menu-toggle.active span{
+        transform: rotate(45deg) translate(-2px, -2px);
+       
+    }
+    #navbar-toggler{
+        display:unset;
+      }
+
+}
+@media screen and (max-width: 868px) {
+    .myslideheight .mySwiper{
+       height: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .myslideheight .mySwiper{
+        height: 250px;
+     }
+}
